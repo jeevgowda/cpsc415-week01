@@ -136,7 +136,7 @@ def quiz_round(lines: list[str], order: list[int], mode: str, fraction: float) -
 
     for position, index in enumerate(order, start=1):
         line = lines[index]
-        label = f"[{position}/{len(order)}]  line {index + 1}"
+        label = f"Question {position} of {len(order)}  ·  line {index + 1}"
 
         if mode == "blanks":
             shown, expected = make_blanks(line, fraction)
